@@ -1,0 +1,85 @@
+name: weather_app
+description: "Weather App"
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+
+dependencies:
+  cupertino_icons: # cupertino icons
+  flutter_screenutil: # For building responsive UIs across different screen sizes
+  dio: # client for making API requests
+  shared_preferences: # shared preferences persistence key value store
+  location: #  # To access the user's current location services
+  flutter_launcher_icons: # Configure app launcher icon
+  flutter_spinkit: # for loading indicator
+  cached_network_image: # Load images from network with caching support
+  flutter_animate: # High-performance animation library
+  intl: # Date and time formatting utilities
+  # BLoC state management library
+  bloc: ^9.0.0
+  flutter_bloc: ^9.1.1
+
+  dartz: ^0.10.1 # Functional programming types like Either, Option
+
+  # Dependency Injection service locator
+  get_it: ^8.0.3
+  injectable: ^2.5.0
+
+  equatable: ^2.0.7 # Value comparison support for BLoC states
+  flutter_dotenv: ^5.2.1 # Load sensitive data and environment variables from `.env` file
+  nb_utils: ^7.1.6 # Utility library with helpful extensions and widgets
+  connectivity_plus: ^6.1.4 # Check network connectivity (Wi-Fi, mobile, offline)
+
+  flutter:
+    sdk: flutter
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: # Code generator required for packages like injectable
+  flutter_gen_runner: # Flutter asset code generation tool
+  injectable_generator: # Generates injectable dependency registration code
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  adaptive_icon_background: "#6151C3"
+  adaptive_icon_foreground: "assets/images/app_icon_foreground.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/images/
+    - assets/vectors/
+    - assets/fonts/
+    - assets/data/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 700
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+          weight: 300
+        - asset: assets/fonts/Cairo-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Cairo-SemiBold.ttf
+          weight: 900
+
