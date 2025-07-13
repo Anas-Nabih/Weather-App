@@ -61,9 +61,7 @@ flutter:
   assets:
     - .env
     - assets/images/
-    - assets/vectors/
-    - assets/fonts/
-    - assets/data/
+
 
   fonts:
     - family: Poppins
